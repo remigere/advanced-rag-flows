@@ -25,4 +25,4 @@ route_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-router: RunnableSequence = route_prompt | structured_llm_router
+question_router: RunnableSequence = route_prompt | structured_llm_router
