@@ -23,4 +23,4 @@ hallucination_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-hallucination_grader = hallucination_prompt | structured_llm_grader
+hallucination_grader: RunnableSequence = hallucination_prompt | structured_llm_grader
