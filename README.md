@@ -1,5 +1,9 @@
-Agentic rag flows in langgraph
+# **Agentic RAG Flows in LangGraph**
 
-CRAG paper: https://arxiv.org/abs/2401.15884
+This project implements **Agentic RAG** flows in LangGraph, based on the following research papers:
 
-Self RAG paper: https://arxiv.org/abs/2310.11511
+- [**CRAG: Contextual Reasoning Agent with Graphs**](https://arxiv.org/abs/2401.15884)
+
+- [**Self-RAG: Self-Supervised Retrieval-Augmented Generation**](https://arxiv.org/abs/2310.11511)
+
+![Graph Overview](./graph.png)
