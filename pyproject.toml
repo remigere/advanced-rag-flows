@@ -19,6 +19,7 @@ black = "^24.8.0"
 isort = "^5.13.2"
 pytest = "^8.3.2"
 langchain-openai = "^0.1.23"
+pre-commit = "^3.8.0"
 
 
 [build-system]
