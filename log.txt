@@ -1,0 +1,466 @@
+Failed to start project advanced-rag-flows
+Error invoking remote method 'up': ExecaError: Command failed with exit code 17: docker compose --project-directory /Users/steph/Code/projects/advanced-rag-flows --project-name advanced-rag-flows-b14b408a1e42aa7a43514794f424e1eb0925009b500a637b962563b5f7b6aab5 -f - up --remove-orphans
+
+failed to solve: process "/bin/sh -c PYTHONDONTWRITEBYTECODE=1 pip install --no-cache-dir -c /api/constraints.txt -e /deps/*" did not complete successfully: exit code: 1
+
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [langgraph-api internal] load build definition from Dockerfile
+#1 transferring dockerfile: 345B done
+#1 DONE 0.0s
+
+#2 [langgraph-api internal] load metadata for docker.io/langchain/langgraph-api:3.12
+#2 DONE 0.0s
+
+#3 [langgraph-api internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [langgraph-api 1/4] FROM docker.io/langchain/langgraph-api:3.12
+#4 DONE 0.0s
+
+#5 [langgraph-api internal] load build context
+#5 transferring context: 1.97MB 0.7s done
+#5 DONE 0.7s
+
+#6 [langgraph-api 2/4] ADD . /deps/advanced-rag-flows
+#6 CACHED
+
+#7 [langgraph-api 3/4] RUN PYTHONDONTWRITEBYTECODE=1 pip install --no-cache-dir -c /api/constraints.txt -e /deps/*
+#7 0.885 Obtaining file:///deps/advanced-rag-flows
+#7 0.886   Installing build dependencies: started
+#7 2.103   Installing build dependencies: finished with status 'done'
+#7 2.104   Checking if build backend supports build_editable: started
+#7 2.309   Checking if build backend supports build_editable: finished with status 'done'
+#7 2.309   Getting requirements to build editable: started
+#7 2.500   Getting requirements to build editable: finished with status 'done'
+#7 2.501   Preparing editable metadata (pyproject.toml): started
+#7 2.811   Preparing editable metadata (pyproject.toml): finished with status 'done'
+#7 2.929 Collecting beautifulsoup4<5.0.0,>=4.12.3 (from advanced-rag-flows==0.1.0)
+#7 3.029   Downloading beautifulsoup4-4.12.3-py3-none-any.whl.metadata (3.8 kB)
+#7 3.207 Collecting langchain<0.3.0,>=0.2.16 (from advanced-rag-flows==0.1.0)
+#7 3.230   Downloading langchain-0.2.16-py3-none-any.whl.metadata (7.1 kB)
+#7 3.254 Collecting langchain-chroma<0.2.0,>=0.1.3 (from advanced-rag-flows==0.1.0)
+#7 3.271   Downloading langchain_chroma-0.1.3-py3-none-any.whl.metadata (1.5 kB)
+#7 3.306 Collecting langchain-community<0.3.0,>=0.2.16 (from advanced-rag-flows==0.1.0)
+#7 3.322   Downloading langchain_community-0.2.16-py3-none-any.whl.metadata (2.7 kB)
+#7 3.353 Collecting langchain-openai<0.2.0,>=0.1.23 (from advanced-rag-flows==0.1.0)
+#7 3.370   Downloading langchain_openai-0.1.23-py3-none-any.whl.metadata (2.6 kB)
+#7 3.398 Collecting langchainhub<0.2.0,>=0.1.21 (from advanced-rag-flows==0.1.0)
+#7 3.414   Downloading langchainhub-0.1.21-py3-none-any.whl.metadata (659 bytes)
+#7 3.415 Requirement already satisfied: langgraph<0.3.0,>=0.2.16 in /usr/local/lib/python3.12/site-packages (from advanced-rag-flows==0.1.0) (0.2.18)
+#7 3.443 Collecting python-dotenv<2.0.0,>=1.0.1 (from advanced-rag-flows==0.1.0)
+#7 3.459   Downloading python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+#7 3.494 Collecting tavily-python<0.5.0,>=0.4.0 (from advanced-rag-flows==0.1.0)
+#7 3.512   Downloading tavily_python-0.4.0-py3-none-any.whl.metadata (11 kB)
+#7 3.544 Collecting soupsieve>1.2 (from beautifulsoup4<5.0.0,>=4.12.3->advanced-rag-flows==0.1.0)
+#7 3.565   Downloading soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)
+#7 3.570 Requirement already satisfied: PyYAML>=5.3 in /usr/local/lib/python3.12/site-packages (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (6.0.2)
+#7 3.921 Collecting SQLAlchemy<3,>=1.4 (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 3.936   Downloading SQLAlchemy-2.0.34-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (9.6 kB)
+#7 4.223 Collecting aiohttp<4.0.0,>=3.8.3 (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 4.241   Downloading aiohttp-3.10.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (7.5 kB)
+#7 4.243 Requirement already satisfied: langchain-core<0.3.0,>=0.2.38 in /usr/local/lib/python3.12/site-packages (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (0.2.38)
+#7 4.260 Collecting langchain-text-splitters<0.3.0,>=0.2.0 (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 4.273   Downloading langchain_text_splitters-0.2.4-py3-none-any.whl.metadata (2.3 kB)
+#7 4.274 Requirement already satisfied: langsmith<0.2.0,>=0.1.17 in /usr/local/lib/python3.12/site-packages (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (0.1.115)
+#7 4.419 Collecting numpy<2.0.0,>=1.26.0 (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 4.436   Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+#7 4.461 Requirement already satisfied: pydantic<3,>=1 in /usr/local/lib/python3.12/site-packages (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (2.9.0)
+#7 4.461 Requirement already satisfied: requests<3,>=2 in /usr/local/lib/python3.12/site-packages (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (2.32.3)
+#7 4.461 Requirement already satisfied: tenacity!=8.4.0,<9.0.0,>=8.1.0 in /usr/local/lib/python3.12/site-packages (from langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (8.5.0)
+#7 4.492 Collecting chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0 (from langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 4.507   Downloading chromadb-0.5.3-py3-none-any.whl.metadata (6.8 kB)
+#7 4.559 Collecting fastapi<1,>=0.95.2 (from langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 4.574   Downloading fastapi-0.113.0-py3-none-any.whl.metadata (27 kB)
+#7 4.606 Collecting dataclasses-json<0.7,>=0.5.7 (from langchain-community<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 4.622   Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+#7 4.673 Collecting openai<2.0.0,>=1.40.0 (from langchain-openai<0.2.0,>=0.1.23->advanced-rag-flows==0.1.0)
+#7 4.686   Downloading openai-1.43.1-py3-none-any.whl.metadata (22 kB)
+#7 4.737 Collecting tiktoken<1,>=0.7 (from langchain-openai<0.2.0,>=0.1.23->advanced-rag-flows==0.1.0)
+#7 4.756   Downloading tiktoken-0.7.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+#7 4.758 Requirement already satisfied: packaging<25,>=23.2 in /usr/local/lib/python3.12/site-packages (from langchainhub<0.2.0,>=0.1.21->advanced-rag-flows==0.1.0) (24.1)
+#7 4.794 Collecting types-requests<3.0.0.0,>=2.31.0.2 (from langchainhub<0.2.0,>=0.1.21->advanced-rag-flows==0.1.0)
+#7 4.809   Downloading types_requests-2.32.0.20240905-py3-none-any.whl.metadata (1.9 kB)
+#7 4.811 Requirement already satisfied: langgraph-checkpoint<2.0.0,>=1.0.2 in /usr/local/lib/python3.12/site-packages (from langgraph<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (1.0.9)
+#7 4.812 Requirement already satisfied: httpx in /usr/local/lib/python3.12/site-packages (from tavily-python<0.5.0,>=0.4.0->advanced-rag-flows==0.1.0) (0.27.2)
+#7 4.838 Collecting aiohappyeyeballs>=2.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 4.853   Downloading aiohappyeyeballs-2.4.0-py3-none-any.whl.metadata (5.9 kB)
+#7 4.876 Collecting aiosignal>=1.1.2 (from aiohttp<4.0.0,>=3.8.3->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 4.891   Downloading aiosignal-1.3.1-py3-none-any.whl.metadata (4.0 kB)
+#7 4.919 Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 4.935   Downloading attrs-24.2.0-py3-none-any.whl.metadata (11 kB)
+#7 4.997 Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 5.014   Downloading frozenlist-1.4.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (12 kB)
+#7 5.174 Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 5.189   Downloading multidict-6.0.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.2 kB)
+#7 5.310 Collecting yarl<2.0,>=1.0 (from aiohttp<4.0.0,>=3.8.3->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 5.327   Downloading yarl-1.9.11-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (43 kB)
+#7 5.355 Collecting build>=1.0.3 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 5.370   Downloading build-1.2.1-py3-none-any.whl.metadata (4.3 kB)
+#7 5.404 Collecting chroma-hnswlib==0.7.3 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 5.428   Downloading chroma-hnswlib-0.7.3.tar.gz (31 kB)
+#7 5.434   Installing build dependencies: started
+#7 10.52   Installing build dependencies: finished with status 'done'
+#7 10.52   Getting requirements to build wheel: started
+#7 10.90   Getting requirements to build wheel: finished with status 'done'
+#7 10.90   Preparing metadata (pyproject.toml): started
+#7 11.27   Preparing metadata (pyproject.toml): finished with status 'done'
+#7 11.48 Requirement already satisfied: uvicorn>=0.18.3 in /usr/local/lib/python3.12/site-packages (from uvicorn[standard]>=0.18.3->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (0.30.6)
+#7 11.63 Collecting posthog>=2.4.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 11.69   Downloading posthog-3.6.3-py2.py3-none-any.whl.metadata (2.0 kB)
+#7 11.71 Requirement already satisfied: typing-extensions>=4.5.0 in /usr/local/lib/python3.12/site-packages (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (4.12.2)
+#7 11.89 Collecting onnxruntime>=1.14.1 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 11.91   Downloading onnxruntime-1.19.2-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (4.5 kB)
+#7 11.93 Collecting opentelemetry-api>=1.2.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 11.94   Downloading opentelemetry_api-1.27.0-py3-none-any.whl.metadata (1.4 kB)
+#7 11.97 Collecting opentelemetry-exporter-otlp-proto-grpc>=1.2.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 11.98   Downloading opentelemetry_exporter_otlp_proto_grpc-1.27.0-py3-none-any.whl.metadata (2.3 kB)
+#7 12.01 Collecting opentelemetry-instrumentation-fastapi>=0.41b0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 12.02   Downloading opentelemetry_instrumentation_fastapi-0.48b0-py3-none-any.whl.metadata (2.1 kB)
+#7 12.05 Collecting opentelemetry-sdk>=1.2.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 12.06   Downloading opentelemetry_sdk-1.27.0-py3-none-any.whl.metadata (1.5 kB)
+#7 12.24 Collecting tokenizers>=0.13.2 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 12.25   Downloading tokenizers-0.20.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+#7 12.28 Collecting pypika>=0.48.9 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 12.30   Downloading PyPika-0.48.9.tar.gz (67 kB)
+#7 12.31   Installing build dependencies: started
+#7 14.04   Installing build dependencies: finished with status 'done'
+#7 14.04   Getting requirements to build wheel: started
+#7 14.42   Getting requirements to build wheel: finished with status 'done'
+#7 14.42   Preparing metadata (pyproject.toml): started
+#7 14.78   Preparing metadata (pyproject.toml): finished with status 'done'
+#7 14.89 Collecting tqdm>=4.65.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 14.94   Downloading tqdm-4.66.5-py3-none-any.whl.metadata (57 kB)
+#7 15.06 Collecting overrides>=7.3.1 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 15.08   Downloading overrides-7.7.0-py3-none-any.whl.metadata (5.8 kB)
+#7 15.15 Collecting importlib-resources (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 15.17   Downloading importlib_resources-6.4.4-py3-none-any.whl.metadata (4.0 kB)
+#7 15.67 Collecting grpcio>=1.58.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 15.69   Downloading grpcio-1.66.1-cp312-cp312-manylinux_2_17_aarch64.whl.metadata (3.9 kB)
+#7 15.73 Collecting bcrypt>=4.0.1 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 15.75   Downloading bcrypt-4.2.0-cp39-abi3-manylinux_2_28_aarch64.whl.metadata (9.6 kB)
+#7 15.77 Collecting typer>=0.9.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 15.79   Downloading typer-0.12.5-py3-none-any.whl.metadata (15 kB)
+#7 15.83 Collecting kubernetes>=28.1.0 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 15.84   Downloading kubernetes-30.1.0-py2.py3-none-any.whl.metadata (1.5 kB)
+#7 15.88 Collecting mmh3>=4.0.1 (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 15.90   Downloading mmh3-4.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+#7 15.90 Requirement already satisfied: orjson>=3.9.12 in /usr/local/lib/python3.12/site-packages (from chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (3.10.7)
+#7 15.94 Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7,>=0.5.7->langchain-community<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 15.96   Downloading marshmallow-3.22.0-py3-none-any.whl.metadata (7.2 kB)
+#7 15.98 Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7,>=0.5.7->langchain-community<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 16.00   Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+#7 16.00 Requirement already satisfied: starlette<0.39.0,>=0.37.2 in /usr/local/lib/python3.12/site-packages (from fastapi<1,>=0.95.2->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (0.38.4)
+#7 16.00 Requirement already satisfied: anyio in /usr/local/lib/python3.12/site-packages (from httpx->tavily-python<0.5.0,>=0.4.0->advanced-rag-flows==0.1.0) (4.4.0)
+#7 16.00 Requirement already satisfied: certifi in /usr/local/lib/python3.12/site-packages (from httpx->tavily-python<0.5.0,>=0.4.0->advanced-rag-flows==0.1.0) (2024.8.30)
+#7 16.00 Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/site-packages (from httpx->tavily-python<0.5.0,>=0.4.0->advanced-rag-flows==0.1.0) (1.0.5)
+#7 16.01 Requirement already satisfied: idna in /usr/local/lib/python3.12/site-packages (from httpx->tavily-python<0.5.0,>=0.4.0->advanced-rag-flows==0.1.0) (3.8)
+#7 16.01 Requirement already satisfied: sniffio in /usr/local/lib/python3.12/site-packages (from httpx->tavily-python<0.5.0,>=0.4.0->advanced-rag-flows==0.1.0) (1.3.1)
+#7 16.01 Requirement already satisfied: h11<0.15,>=0.13 in /usr/local/lib/python3.12/site-packages (from httpcore==1.*->httpx->tavily-python<0.5.0,>=0.4.0->advanced-rag-flows==0.1.0) (0.14.0)
+#7 16.01 Requirement already satisfied: jsonpatch<2.0,>=1.33 in /usr/local/lib/python3.12/site-packages (from langchain-core<0.3.0,>=0.2.38->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (1.33)
+#7 16.03 Collecting distro<2,>=1.7.0 (from openai<2.0.0,>=1.40.0->langchain-openai<0.2.0,>=0.1.23->advanced-rag-flows==0.1.0)
+#7 16.05   Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+#7 16.09 Collecting jiter<1,>=0.4.0 (from openai<2.0.0,>=1.40.0->langchain-openai<0.2.0,>=0.1.23->advanced-rag-flows==0.1.0)
+#7 16.11   Downloading jiter-0.5.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.6 kB)
+#7 16.12 Requirement already satisfied: annotated-types>=0.4.0 in /usr/local/lib/python3.12/site-packages (from pydantic<3,>=1->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (0.7.0)
+#7 16.12 Requirement already satisfied: pydantic-core==2.23.2 in /usr/local/lib/python3.12/site-packages (from pydantic<3,>=1->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (2.23.2)
+#7 16.12 Requirement already satisfied: tzdata in /usr/local/lib/python3.12/site-packages (from pydantic<3,>=1->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (2024.1)
+#7 16.12 Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.12/site-packages (from requests<3,>=2->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (3.3.2)
+#7 16.12 Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/site-packages (from requests<3,>=2->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (2.2.2)
+#7 16.31 Collecting greenlet!=0.4.17 (from SQLAlchemy<3,>=1.4->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 16.32   Downloading greenlet-3.0.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.8 kB)
+#7 16.76 Collecting regex>=2022.1.18 (from tiktoken<1,>=0.7->langchain-openai<0.2.0,>=0.1.23->advanced-rag-flows==0.1.0)
+#7 16.78   Downloading regex-2024.7.24-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (40 kB)
+#7 16.82 Collecting pyproject_hooks (from build>=1.0.3->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 16.83   Downloading pyproject_hooks-1.1.0-py3-none-any.whl.metadata (1.3 kB)
+#7 16.85 Requirement already satisfied: jsonpointer>=1.9 in /usr/local/lib/python3.12/site-packages (from jsonpatch<2.0,>=1.33->langchain-core<0.3.0,>=0.2.38->langchain<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0) (3.0.0)
+#7 16.85 Requirement already satisfied: six>=1.9.0 in /usr/local/lib/python3.12/site-packages (from kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (1.16.0)
+#7 16.85 Requirement already satisfied: python-dateutil>=2.5.3 in /usr/local/lib/python3.12/site-packages (from kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (2.9.0.post0)
+#7 16.93 Collecting google-auth>=1.0.1 (from kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 16.94   Downloading google_auth-2.34.0-py2.py3-none-any.whl.metadata (4.7 kB)
+#7 16.97 Collecting websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 (from kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 16.99   Downloading websocket_client-1.8.0-py3-none-any.whl.metadata (8.0 kB)
+#7 17.01 Collecting requests-oauthlib (from kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.03   Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl.metadata (11 kB)
+#7 17.05 Collecting oauthlib>=3.2.2 (from kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.06   Downloading oauthlib-3.2.2-py3-none-any.whl.metadata (7.5 kB)
+#7 17.10 Collecting coloredlogs (from onnxruntime>=1.14.1->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.11   Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+#7 17.13 Collecting flatbuffers (from onnxruntime>=1.14.1->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.15   Downloading flatbuffers-24.3.25-py2.py3-none-any.whl.metadata (850 bytes)
+#7 17.30 Collecting protobuf (from onnxruntime>=1.14.1->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.32   Downloading protobuf-5.28.0-cp38-abi3-manylinux2014_aarch64.whl.metadata (592 bytes)
+#7 17.35 Collecting sympy (from onnxruntime>=1.14.1->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.37   Downloading sympy-1.13.2-py3-none-any.whl.metadata (12 kB)
+#7 17.39 Collecting deprecated>=1.2.6 (from opentelemetry-api>=1.2.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.41   Downloading Deprecated-1.2.14-py2.py3-none-any.whl.metadata (5.4 kB)
+#7 17.45 Collecting importlib-metadata<=8.4.0,>=6.0 (from opentelemetry-api>=1.2.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.47   Downloading importlib_metadata-8.4.0-py3-none-any.whl.metadata (4.7 kB)
+#7 17.49 Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.50   Downloading googleapis_common_protos-1.65.0-py2.py3-none-any.whl.metadata (1.5 kB)
+#7 17.53 Collecting opentelemetry-exporter-otlp-proto-common==1.27.0 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.55   Downloading opentelemetry_exporter_otlp_proto_common-1.27.0-py3-none-any.whl.metadata (1.8 kB)
+#7 17.58 Collecting opentelemetry-proto==1.27.0 (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.60   Downloading opentelemetry_proto-1.27.0-py3-none-any.whl.metadata (2.3 kB)
+#7 17.61 Collecting protobuf (from onnxruntime>=1.14.1->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.63   Downloading protobuf-4.25.4-cp37-abi3-manylinux2014_aarch64.whl.metadata (541 bytes)
+#7 17.73 Collecting opentelemetry-instrumentation-asgi==0.48b0 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.75   Downloading opentelemetry_instrumentation_asgi-0.48b0-py3-none-any.whl.metadata (2.0 kB)
+#7 17.78 Collecting opentelemetry-instrumentation==0.48b0 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.79   Downloading opentelemetry_instrumentation-0.48b0-py3-none-any.whl.metadata (6.1 kB)
+#7 17.82 Collecting opentelemetry-semantic-conventions==0.48b0 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.84   Downloading opentelemetry_semantic_conventions-0.48b0-py3-none-any.whl.metadata (2.4 kB)
+#7 17.86 Collecting opentelemetry-util-http==0.48b0 (from opentelemetry-instrumentation-fastapi>=0.41b0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 17.88   Downloading opentelemetry_util_http-0.48b0-py3-none-any.whl.metadata (2.5 kB)
+#7 18.03 Collecting setuptools>=16.0 (from opentelemetry-instrumentation==0.48b0->opentelemetry-instrumentation-fastapi>=0.41b0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.05   Downloading setuptools-74.1.2-py3-none-any.whl.metadata (6.7 kB)
+#7 18.13 Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.48b0->opentelemetry-instrumentation-fastapi>=0.41b0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.15   Downloading wrapt-1.16.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+#7 18.19 Collecting asgiref~=3.0 (from opentelemetry-instrumentation-asgi==0.48b0->opentelemetry-instrumentation-fastapi>=0.41b0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.21   Downloading asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+#7 18.25 Collecting monotonic>=1.5 (from posthog>=2.4.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.27   Downloading monotonic-1.6-py2.py3-none-any.whl.metadata (1.5 kB)
+#7 18.30 Collecting backoff>=1.10.0 (from posthog>=2.4.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.31   Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+#7 18.36 Collecting huggingface-hub<1.0,>=0.16.4 (from tokenizers>=0.13.2->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.38   Downloading huggingface_hub-0.24.6-py3-none-any.whl.metadata (13 kB)
+#7 18.40 Requirement already satisfied: click>=8.0.0 in /usr/local/lib/python3.12/site-packages (from typer>=0.9.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (8.1.7)
+#7 18.42 Collecting shellingham>=1.3.0 (from typer>=0.9.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.44   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+#7 18.50 Collecting rich>=10.11.0 (from typer>=0.9.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.51   Downloading rich-13.8.0-py3-none-any.whl.metadata (18 kB)
+#7 18.54 Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7,>=0.5.7->langchain-community<0.3.0,>=0.2.16->advanced-rag-flows==0.1.0)
+#7 18.55   Downloading mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
+#7 18.56 Requirement already satisfied: httptools>=0.5.0 in /usr/local/lib/python3.12/site-packages (from uvicorn[standard]>=0.18.3->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (0.6.1)
+#7 18.56 Requirement already satisfied: uvloop!=0.15.0,!=0.15.1,>=0.14.0 in /usr/local/lib/python3.12/site-packages (from uvicorn[standard]>=0.18.3->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0) (0.20.0)
+#7 18.61 Collecting watchfiles>=0.13 (from uvicorn[standard]>=0.18.3->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.64   Downloading watchfiles-0.24.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (4.9 kB)
+#7 18.71 Collecting websockets>=10.4 (from uvicorn[standard]>=0.18.3->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.73   Downloading websockets-13.0.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+#7 18.78 Collecting cachetools<6.0,>=2.0.0 (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.80   Downloading cachetools-5.5.0-py3-none-any.whl.metadata (5.3 kB)
+#7 18.84 Collecting pyasn1-modules>=0.2.1 (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.86   Downloading pyasn1_modules-0.4.0-py3-none-any.whl.metadata (3.4 kB)
+#7 18.88 Collecting rsa<5,>=3.1.4 (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.90   Downloading rsa-4.9-py3-none-any.whl.metadata (4.2 kB)
+#7 18.96 Collecting filelock (from huggingface-hub<1.0,>=0.16.4->tokenizers>=0.13.2->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 18.97   Downloading filelock-3.15.4-py3-none-any.whl.metadata (2.9 kB)
+#7 19.00 Collecting fsspec>=2023.5.0 (from huggingface-hub<1.0,>=0.16.4->tokenizers>=0.13.2->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.02   Downloading fsspec-2024.9.0-py3-none-any.whl.metadata (11 kB)
+#7 19.06 Collecting zipp>=0.5 (from importlib-metadata<=8.4.0,>=6.0->opentelemetry-api>=1.2.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.08   Downloading zipp-3.20.1-py3-none-any.whl.metadata (3.7 kB)
+#7 19.12 Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->typer>=0.9.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.14   Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+#7 19.17 Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.11.0->typer>=0.9.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.19   Downloading pygments-2.18.0-py3-none-any.whl.metadata (2.5 kB)
+#7 19.23 Collecting humanfriendly>=9.1 (from coloredlogs->onnxruntime>=1.14.1->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.25   Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+#7 19.28 Collecting mpmath<1.4,>=1.1.0 (from sympy->onnxruntime>=1.14.1->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.30   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+#7 19.33 Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->typer>=0.9.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.34   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+#7 19.38 Collecting pyasn1<0.7.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth>=1.0.1->kubernetes>=28.1.0->chromadb!=0.5.4,!=0.5.5,<0.6.0,>=0.4.0->langchain-chroma<0.2.0,>=0.1.3->advanced-rag-flows==0.1.0)
+#7 19.39   Downloading pyasn1-0.6.0-py2.py3-none-any.whl.metadata (8.3 kB)
+#7 19.43 Downloading beautifulsoup4-4.12.3-py3-none-any.whl (147 kB)
+#7 19.47 Downloading langchain-0.2.16-py3-none-any.whl (1.0 MB)
+#7 19.64    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 5.9 MB/s eta 0:00:00
+#7 19.66 Downloading langchain_chroma-0.1.3-py3-none-any.whl (10 kB)
+#7 19.68 Downloading langchain_community-0.2.16-py3-none-any.whl (2.3 MB)
+#7 20.08    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 5.9 MB/s eta 0:00:00
+#7 20.11 Downloading langchain_openai-0.1.23-py3-none-any.whl (51 kB)
+#7 20.15 Downloading langchainhub-0.1.21-py3-none-any.whl (5.2 kB)
+#7 20.18 Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+#7 20.22 Downloading tavily_python-0.4.0-py3-none-any.whl (13 kB)
+#7 20.25 Downloading aiohttp-3.10.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.3 MB)
+#7 20.50    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 5.4 MB/s eta 0:00:00
+#7 20.52 Downloading chromadb-0.5.3-py3-none-any.whl (559 kB)
+#7 20.62    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 559.5/559.5 kB 6.4 MB/s eta 0:00:00
+#7 20.64 Downloading dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+#7 20.66 Downloading fastapi-0.113.0-py3-none-any.whl (93 kB)
+#7 20.70 Downloading langchain_text_splitters-0.2.4-py3-none-any.whl (25 kB)
+#7 20.72 Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.9 MB)
+#7 22.39    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.9/13.9 MB 8.4 MB/s eta 0:00:00
+#7 22.41 Downloading openai-1.43.1-py3-none-any.whl (365 kB)
+#7 22.47 Downloading soupsieve-2.6-py3-none-any.whl (36 kB)
+#7 22.48 Downloading SQLAlchemy-2.0.34-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.2 MB)
+#7 22.79    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 10.4 MB/s eta 0:00:00
+#7 22.82 Downloading tiktoken-0.7.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.0 MB)
+#7 22.90    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 13.3 MB/s eta 0:00:00
+#7 22.92 Downloading types_requests-2.32.0.20240905-py3-none-any.whl (15 kB)
+#7 22.95 Downloading aiohappyeyeballs-2.4.0-py3-none-any.whl (12 kB)
+#7 22.97 Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+#7 22.99 Downloading attrs-24.2.0-py3-none-any.whl (63 kB)
+#7 23.01 Downloading bcrypt-4.2.0-cp39-abi3-manylinux_2_28_aarch64.whl (277 kB)
+#7 23.05 Downloading build-1.2.1-py3-none-any.whl (21 kB)
+#7 23.08 Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+#7 23.11 Downloading frozenlist-1.4.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (280 kB)
+#7 23.15 Downloading greenlet-3.0.3-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (660 kB)
+#7 23.23    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.5/660.5 kB 8.5 MB/s eta 0:00:00
+#7 23.25 Downloading grpcio-1.66.1-cp312-cp312-manylinux_2_17_aarch64.whl (5.4 MB)
+#7 23.75    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 11.1 MB/s eta 0:00:00
+#7 23.78 Downloading jiter-0.5.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (331 kB)
+#7 23.84 Downloading kubernetes-30.1.0-py2.py3-none-any.whl (1.7 MB)
+#7 23.96    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 13.1 MB/s eta 0:00:00
+#7 23.98 Downloading marshmallow-3.22.0-py3-none-any.whl (49 kB)
+#7 24.00 Downloading mmh3-4.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (69 kB)
+#7 24.03 Downloading multidict-6.0.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (129 kB)
+#7 24.06 Downloading onnxruntime-1.19.2-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (11.5 MB)
+#7 25.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.5/11.5 MB 10.1 MB/s eta 0:00:00
+#7 25.21 Downloading opentelemetry_api-1.27.0-py3-none-any.whl (63 kB)
+#7 25.24 Downloading opentelemetry_exporter_otlp_proto_grpc-1.27.0-py3-none-any.whl (18 kB)
+#7 25.26 Downloading opentelemetry_exporter_otlp_proto_common-1.27.0-py3-none-any.whl (17 kB)
+#7 25.28 Downloading opentelemetry_proto-1.27.0-py3-none-any.whl (52 kB)
+#7 25.31 Downloading opentelemetry_instrumentation_fastapi-0.48b0-py3-none-any.whl (11 kB)
+#7 25.33 Downloading opentelemetry_instrumentation-0.48b0-py3-none-any.whl (29 kB)
+#7 25.35 Downloading opentelemetry_instrumentation_asgi-0.48b0-py3-none-any.whl (15 kB)
+#7 25.38 Downloading opentelemetry_semantic_conventions-0.48b0-py3-none-any.whl (149 kB)
+#7 25.40 Downloading opentelemetry_util_http-0.48b0-py3-none-any.whl (6.9 kB)
+#7 25.42 Downloading opentelemetry_sdk-1.27.0-py3-none-any.whl (110 kB)
+#7 25.46 Downloading overrides-7.7.0-py3-none-any.whl (17 kB)
+#7 25.48 Downloading posthog-3.6.3-py2.py3-none-any.whl (53 kB)
+#7 25.51 Downloading regex-2024.7.24-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (789 kB)
+#7 25.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 789.7/789.7 kB 12.1 MB/s eta 0:00:00
+#7 25.59 Downloading tokenizers-0.20.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.9 MB)
+#7 25.83    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 13.0 MB/s eta 0:00:00
+#7 25.85 Downloading tqdm-4.66.5-py3-none-any.whl (78 kB)
+#7 25.87 Downloading typer-0.12.5-py3-none-any.whl (47 kB)
+#7 25.89 Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+#7 25.92 Downloading yarl-1.9.11-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (505 kB)
+#7 25.98 Downloading importlib_resources-6.4.4-py3-none-any.whl (35 kB)
+#7 26.01 Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+#7 26.03 Downloading Deprecated-1.2.14-py2.py3-none-any.whl (9.6 kB)
+#7 26.05 Downloading google_auth-2.34.0-py2.py3-none-any.whl (200 kB)
+#7 26.08 Downloading googleapis_common_protos-1.65.0-py2.py3-none-any.whl (220 kB)
+#7 26.11 Downloading huggingface_hub-0.24.6-py3-none-any.whl (417 kB)
+#7 26.17 Downloading importlib_metadata-8.4.0-py3-none-any.whl (26 kB)
+#7 26.20 Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+#7 26.22 Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+#7 26.24 Downloading oauthlib-3.2.2-py3-none-any.whl (151 kB)
+#7 26.27 Downloading protobuf-4.25.4-cp37-abi3-manylinux2014_aarch64.whl (293 kB)
+#7 26.31 Downloading rich-13.8.0-py3-none-any.whl (241 kB)
+#7 26.34 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+#7 26.36 Downloading watchfiles-0.24.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (437 kB)
+#7 26.42 Downloading websocket_client-1.8.0-py3-none-any.whl (58 kB)
+#7 26.45 Downloading websockets-13.0.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (158 kB)
+#7 26.48 Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+#7 26.50 Downloading flatbuffers-24.3.25-py2.py3-none-any.whl (26 kB)
+#7 26.52 Downloading pyproject_hooks-1.1.0-py3-none-any.whl (9.2 kB)
+#7 26.54 Downloading requests_oauthlib-2.0.0-py2.py3-none-any.whl (24 kB)
+#7 26.56 Downloading sympy-1.13.2-py3-none-any.whl (6.2 MB)
+#7 27.09    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 11.8 MB/s eta 0:00:00
+#7 27.11 Downloading asgiref-3.8.1-py3-none-any.whl (23 kB)
+#7 27.13 Downloading cachetools-5.5.0-py3-none-any.whl (9.5 kB)
+#7 27.15 Downloading fsspec-2024.9.0-py3-none-any.whl (179 kB)
+#7 27.18 Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+#7 27.20 Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+#7 27.24 Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+#7 27.29    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 10.6 MB/s eta 0:00:00
+#7 27.30 Downloading pyasn1_modules-0.4.0-py3-none-any.whl (181 kB)
+#7 27.33 Downloading pygments-2.18.0-py3-none-any.whl (1.2 MB)
+#7 27.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 12.7 MB/s eta 0:00:00
+#7 27.45 Downloading rsa-4.9-py3-none-any.whl (34 kB)
+#7 27.47 Downloading setuptools-74.1.2-py3-none-any.whl (1.3 MB)
+#7 27.56    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 14.2 MB/s eta 0:00:00
+#7 27.57 Downloading wrapt-1.16.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (86 kB)
+#7 27.60 Downloading zipp-3.20.1-py3-none-any.whl (9.0 kB)
+#7 27.61 Downloading filelock-3.15.4-py3-none-any.whl (16 kB)
+#7 27.63 Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+#7 27.65 Downloading pyasn1-0.6.0-py2.py3-none-any.whl (85 kB)
+#7 27.78 Building wheels for collected packages: advanced-rag-flows, chroma-hnswlib, pypika
+#7 27.78   Building editable for advanced-rag-flows (pyproject.toml): started
+#7 28.18   Building editable for advanced-rag-flows (pyproject.toml): finished with status 'done'
+#7 28.18   Created wheel for advanced-rag-flows: filename=advanced_rag_flows-0.1.0-py3-none-any.whl size=1531 sha256=f2001945edb6de81b71c2b4adcecb9319abb139dad334de47a9b72196280d1d7
+#7 28.18   Stored in directory: /tmp/pip-ephem-wheel-cache-p9181i_b/wheels/74/f0/35/d8c0fb3d965702652de9c592d0f4dade9afded28e2e8455b96
+#7 28.19   Building wheel for chroma-hnswlib (pyproject.toml): started
+#7 28.65   Building wheel for chroma-hnswlib (pyproject.toml): finished with status 'error'
+#7 28.66   error: subprocess-exited-with-error
+#7 28.66   
+#7 28.66   × Building wheel for chroma-hnswlib (pyproject.toml) did not run successfully.
+#7 28.66   │ exit code: 1
+#7 28.66   ╰─> [60 lines of output]
+#7 28.66       running bdist_wheel
+#7 28.66       running build
+#7 28.66       running build_ext
+#7 28.66       creating tmp
+#7 28.66       g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall -fPIC -I/usr/local/include/python3.12 -c /tmp/tmpg2v3sji5.cpp -o tmp/tmpg2v3sji5.o -std=c++14
+#7 28.66       g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall -fPIC -I/usr/local/include/python3.12 -c /tmp/tmp0jkdxkzk.cpp -o tmp/tmp0jkdxkzk.o -std=c++11
+#7 28.66       Traceback (most recent call last):
+#7 28.66         File "/usr/local/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+#7 28.66           main()
+#7 28.66         File "/usr/local/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+#7 28.66           json_out['return_val'] = hook(**hook_input['kwargs'])
+#7 28.66                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#7 28.66         File "/usr/local/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 251, in build_wheel
+#7 28.66           return _build_backend().build_wheel(wheel_directory, config_settings,
+#7 28.66                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/build_meta.py", line 421, in build_wheel
+#7 28.66           return self._build_with_temp_dir(
+#7 28.66                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/build_meta.py", line 403, in _build_with_temp_dir
+#7 28.66           self.run_setup()
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/build_meta.py", line 318, in run_setup
+#7 28.66           exec(code, locals())
+#7 28.66         File "<string>", line 115, in <module>
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/__init__.py", line 117, in setup
+#7 28.66           return distutils.core.setup(**attrs)
+#7 28.66                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/core.py", line 184, in setup
+#7 28.66           return run_commands(dist)
+#7 28.66                  ^^^^^^^^^^^^^^^^^^
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/core.py", line 200, in run_commands
+#7 28.66           dist.run_commands()
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+#7 28.66           self.run_command(cmd)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/dist.py", line 950, in run_command
+#7 28.66           super().run_command(command)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+#7 28.66           cmd_obj.run()
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/command/bdist_wheel.py", line 384, in run
+#7 28.66           self.run_command("build")
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/cmd.py", line 316, in run_command
+#7 28.66           self.distribution.run_command(command)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/dist.py", line 950, in run_command
+#7 28.66           super().run_command(command)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+#7 28.66           cmd_obj.run()
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/command/build.py", line 135, in run
+#7 28.66           self.run_command(cmd_name)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/cmd.py", line 316, in run_command
+#7 28.66           self.distribution.run_command(command)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/dist.py", line 950, in run_command
+#7 28.66           super().run_command(command)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+#7 28.66           cmd_obj.run()
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/command/build_ext.py", line 98, in run
+#7 28.66           _build_ext.run(self)
+#7 28.66         File "/tmp/pip-build-env-3re3ezdk/overlay/lib/python3.12/site-packages/setuptools/_distutils/command/build_ext.py", line 359, in run
+#7 28.66           self.build_extensions()
+#7 28.66         File "<string>", line 102, in build_extensions
+#7 28.66         File "<string>", line 69, in cpp_flag
+#7 28.66       RuntimeError: Unsupported compiler -- at least C++11 support is needed!
+#7 28.66       [end of output]
+#7 28.66   
+#7 28.66   note: This error originates from a subprocess, and is likely not a problem with pip.
+#7 28.66   ERROR: Failed building wheel for chroma-hnswlib
+#7 28.66   Building wheel for pypika (pyproject.toml): started
+#7 29.08   Building wheel for pypika (pyproject.toml): finished with status 'done'
+#7 29.09   Created wheel for pypika: filename=PyPika-0.48.9-py2.py3-none-any.whl size=53726 sha256=eb39437c3e2082feb572d50ee264ecf0d570e27422254f750e643c23adf4b096
+#7 29.09   Stored in directory: /tmp/pip-ephem-wheel-cache-p9181i_b/wheels/d5/3d/69/8d68d249cd3de2584f226e27fd431d6344f7d70fd856ebd01b
+#7 29.09 Successfully built advanced-rag-flows pypika
+#7 29.09 Failed to build chroma-hnswlib
+#7 29.38 ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (chroma-hnswlib)
+#7 ERROR: process "/bin/sh -c PYTHONDONTWRITEBYTECODE=1 pip install --no-cache-dir -c /api/constraints.txt -e /deps/*" did not complete successfully: exit code: 1
+------
+ > [langgraph-api 3/4] RUN PYTHONDONTWRITEBYTECODE=1 pip install --no-cache-dir -c /api/constraints.txt -e /deps/*:
+28.66   
+28.66   note: This error originates from a subprocess, and is likely not a problem with pip.
+28.66   ERROR: Failed building wheel for chroma-hnswlib
+28.66   Building wheel for pypika (pyproject.toml): started
+29.08   Building wheel for pypika (pyproject.toml): finished with status 'done'
+29.09   Created wheel for pypika: filename=PyPika-0.48.9-py2.py3-none-any.whl size=53726 sha256=eb39437c3e2082feb572d50ee264ecf0d570e27422254f750e643c23adf4b096
+29.09   Stored in directory: /tmp/pip-ephem-wheel-cache-p9181i_b/wheels/d5/3d/69/8d68d249cd3de2584f226e27fd431d6344f7d70fd856ebd01b
+29.09 Successfully built advanced-rag-flows pypika
+29.09 Failed to build chroma-hnswlib
+29.38 ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (chroma-hnswlib)
+------

@@ -1,0 +1,13 @@
+{
+  "dockerfile_lines": [
+    "RUN apt-get update && apt-get install -y g++ build-essential"
+  ],
+  "graphs": {
+    "agent": "./graph/graph.py:app"
+  },
+  "env": ".env",
+  "python_version": "3.12",
+  "dependencies": [
+    "."
+  ]
+}
